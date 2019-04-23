@@ -1,0 +1,109 @@
+<html dir=LTR>
+<title>Sign In</title>
+<style>
+.OraHeaderSub
+{
+     font-family: Arial, Helvetica, Geneva, sans-serif;
+     font-size: 16pt;
+     color: #336699;
+}
+.OraInstructionText
+{
+     font-family: Arial, Helvetica, Geneva, sans-serif;
+     font-size: 10pt;
+     color: #000000;
+}
+.OraErrorHeader
+{
+     font-family: Arial, Helvetica, Geneva, sans-serif;
+     font-size: 11pt;
+     color: #CC0000;
+     font-weight: bold ;
+}
+.OraErrorText
+{
+     font-family: Arial, Helvetica, Geneva, sans-serif;
+     font-size: 10pt;
+     color: #000000;
+}
+.OraFieldText
+{
+     font-family: Arial, Helvetica, Geneva, sans-serif;
+     font-size: 10pt;
+     color: #000000;
+     font-weight: normal;
+}
+.OraCopyright
+{
+     font-family: Arial, Helvetica, Geneva, sans-serif;
+     font-size: 8pt;
+     color: #000000;
+}
+.OraHintText
+{
+     font-family: Arial, Helvetica, Geneva, sans-serif;
+     font-size: 9pt;
+     color: #000000;
+}
+.OraValueText
+{
+     font-family: Arial, Helvetica, Geneva, sans-serif;
+     font-size: 10pt;
+     color: #000000;
+     font-weight: bold;
+}
+</style>
+
+<body bgcolor="#FFFFFF" onLoad="document.forms[0].ssousername.focus();">
+
+<center>
+<br>
+<font class="OraHeaderSub">Sign In</font>
+<br><br><br>
+<font class="OraInstructionText">Enter your Single Sign-On user name and password to sign in</font><br><br>
+
+
+
+<table border=0 summary="">
+<form method="POST" action="/sso/auth" AutoComplete="off">
+<INPUT TYPE="hidden" NAME="v" value="v1.4">
+<INPUT TYPE="hidden" NAME="site2pstoretoken" value="v1.4~2474F6B4~54D4A912B1FC41A79ABDA30D1D5970CC908D4E3C1506909D68017C484D5E73878BD9D37035862D3236B1D39220B1F0797F8EA04CD4578B9600715853623B1BE03448270724ECB3580D9989ADBBCE8D68BF7DDDD74C7772EDACD5021BBFA16699D8609CD8224C9827EA22FA08F6699926B460C6558EBCDB8F26570C07A6B7096C9062C17B47B83E38AE839626B1AF412F8D379DDF20A25EC3AB2A554E9717A8C4678047991A808E572EA944CE8640440EB1BA46A87DA24D51B3E01A026AC8E00BC35277289C0774EBF73848D8969D7D3FDF54DCB7450F9E644475001490DC12A06A9A0CE733D0D2B6800C89E5DEF593EB112BADDF42FE999D798E8F78C037499B">
+<INPUT TYPE="hidden" NAME="locale" value="">
+<INPUT TYPE="hidden" NAME="appctx" value="">
+
+<tr>
+<th id="c2" ALIGN="RIGHT"><label for="c2"><font class="OraFieldText">User Name</font></label></th>
+
+<td headers="c2"><INPUT TYPE="text" SIZE="30" MAXLENGTH="50" ID="c2" NAME="ssousername" value=""></td>
+
+</tr>
+<tr>
+<th id="c3" ALIGN="RIGHT"><label for="c3"><font class="OraFieldText">Password</font></label></th>
+<td headers="c3"> <INPUT TYPE="password" SIZE="30" MAXLENGTH="50" ID="c3" NAME="password"> </td>
+</tr>
+
+<!-- UNCOMMENT TO ENABLE MULTIPLE REALM SUPPORT
+<tr>
+<th id="c4" ALIGN="RIGHT"><label for="c4"><font class="OraFieldText">Company</font></label></th>
+<td headers="c4"> <INPUT TYPE="text"  SIZE="30" MAXLENGTH="50" ID="c4" NAME="subscribername" value=""></td>
+</tr>
+-->
+
+<tr>
+<th id="c5">&nbsp;</th>
+<td headers="c5" align="left">
+  <font class="OraFieldText"> 
+  <INPUT TYPE="submit" VALUE="Login">
+  <INPUT TYPE="button" NAME="p_request" VALUE="Cancel" 
+       onClick="javascript:document.location.href = 'http://app1.simplexinfrastructures.com:7777'">
+  </font>
+</td>
+</tr>
+
+</form>
+</table>
+<br>
+<font class="OraCopyright">Unauthorized use of this site is prohibited and may subject you to civil and criminal prosecution.</font>
+<center>
+</body>
+</html>
